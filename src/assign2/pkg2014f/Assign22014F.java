@@ -8,7 +8,7 @@ package assign2.pkg2014f;
 import java.util.Scanner;
 
 /**
- * @author <ENTER YOUR NAME HERE>
+ * @author Pankaj
  */
 public class Assign22014F {
 
@@ -65,6 +65,13 @@ public class Assign22014F {
      * - Gaddis pg. 106
      */
     public static void doExercise4() {
+        System.out.println("   *");
+        System.out.println("  ***");
+        System.out.println(" *****");
+        System.out.println("*******");
+        System.out.println(" *****");
+        System.out.println("  ***");
+        System.out.println("   *");
         // TODO: Complete Exercise #4 Below
 
     }
@@ -81,8 +88,17 @@ public class Assign22014F {
      * - Gaddis pg. 106-7
      */
     public static void doExercise9() {
-        // TODO: Complete Exercise #9 Below
+        Scanner info = new Scanner(System.in);
+        System.out.println("Enter the toatal numbers of miles driven");
+        double total_miles = info.nextDouble();
 
+        System.out.println("Enter the gallon of gas used");
+        double gallon_gas = info.nextDouble();
+        double MPG = total_miles / gallon_gas;
+
+        System.out.println("the car's miles per gallon is: " + MPG);
+
+      // TODO: Complete Exercise #9 Below
     }
 
     /* Exercise #10
@@ -93,8 +109,16 @@ public class Assign22014F {
      * - Gaddis pg. 107
      */
     public static void doExercise10() {
-        // TODO: Complete Exercise #10 Below
+        Scanner info = new Scanner(System.in);
+        System.out.println("Enter your test scores");
+        double score1 = info.nextDouble();
+        double score2 = info.nextDouble();
+        double score3 = info.nextDouble();
+        System.out.println("you entered: " + score1 + '\n' + score2 + '\n' + score3);
+        double avg = (score1 + score2 + score3) / 3;
+        System.out.println("the average is: " + avg);
 
+        // TODO: Complete Exercise #10 Below
     }
 
     /* Exercise #12
@@ -110,8 +134,30 @@ public class Assign22014F {
      * - Gaddis pg. 107
      */
     public static void doExercise12() {
-        // TODO: Complete Exercise #12 Below
 
+        Scanner info = new Scanner(System.in);
+
+        System.out.println("Enter the name of your favourite city");
+
+        // String city=new String();
+        String city = info.nextLine();
+        int length = city.length();
+
+        // String upper=new String();
+        String upper = city.toUpperCase();
+         //String lower=new String();
+
+        String lower = city.toLowerCase();
+        // String first=new String();
+
+        String first = String.valueOf(city.charAt(0));
+        
+        System.out.println("the number of character in your city are: " + length);
+        System.out.println(" Your city name in upper case is: " + upper);
+        System.out.println("Your city name in lower case is: " + lower );
+        System.out.println("the first letter of your city is: " +first);
+
+        // TODO: Complete Exercise #12 Below
     }
 
     /* Exercise #16
@@ -137,7 +183,33 @@ public class Assign22014F {
      * - Gaddis pg. 108
      */
     public static void doExercise16() {
-        // TODO: Complete Exercise #16 Below
+        Scanner info = new Scanner(System.in);
+        System.out.println("Enter your name.");
+        String name = info.nextLine();
+        
+        
+        
+        System.out.println("Enter your city.");
+        String city  = info.nextLine();
+        
+        System.out.println("Enter your age.");
+        String age = info.nextLine();
+      
+        System.out.println("Enter your college name.");
+        String colg = info.nextLine();
+         
+        System.out.println("Enter your profession.");
+        String prof  = info.nextLine();
+        
+        System.out.println("Enter an animal name.");
+        String animal = info.nextLine();
+        
+        System.out.println("Enter a pet name.");
+        String pet = info.nextLine();
+        
+        System.out.println("There once was a person named " + name + " who lived in " + city + ". At the age of " + age +", " + name + " went to college at " + colg + ". " + name + " graduated and went to work as a "
+                + prof + ". Then, " + name + " adopted a(n) " + animal + " named " + pet + ". They both lived happily ever after.");
 
+        // TODO: Complete Exercise #16 Below
     }
 }
